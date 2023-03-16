@@ -1,10 +1,15 @@
 import { Group, Student, studentString } from "./analyze"
+import { groupF } from "./rules";
 
 export interface TableProps {
     group: Group
 }
 
 export function Table(props: TableProps) {
+
+    if (props.group.students.length === 0) {
+        return null;
+    }
 
     let plus_text = props.group.students.map(student => student.attended ? "*" : "");
     let result_text = plus_text.join("\n");
