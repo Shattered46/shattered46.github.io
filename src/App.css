@@ -1,0 +1,18 @@
+.groups-container {
+    display: flex;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.group-table { margin: 10px;}
+
+.attendance {
+    text-align: center;
+}
+
+.inputs {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
